@@ -6,11 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <EditText
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="@dimen/search_box_left_right_margin"
+        android:layout_marginStart="@dimen/search_box_left_right_margin"
+        android:layout_height="@dimen/search_box_height"
+        android:hint="@string/search_box_hint"
+        android:drawableStart="@drawable/search_icon"
+        android:layout_marginTop="@dimen/search_box_top_margin"
+        android:background="@drawable/rounded_corners"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
