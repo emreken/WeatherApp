@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
     tools:context=".MainActivity">
 
     <EditText
@@ -19,5 +21,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searchResultListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/search_box_left_right_margin"
+        android:layout_marginStart="@dimen/search_box_left_right_margin"
+        android:elevation="@dimen/search_list_elevation"
+        app:layout_constraintTop_toBottomOf="@+id/searchView"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/locations_top_margin"
+        app:layout_constraintTop_toBottomOf="@+id/searchView"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

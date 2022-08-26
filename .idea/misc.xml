@@ -5,7 +5,10 @@
       <map>
         <entry key="..\:/Users/Emre/Desktop/WeatherApp/app/src/main/res/drawable/rounded_corners.xml" value="0.233" />
         <entry key="..\:/Users/Emre/Desktop/WeatherApp/app/src/main/res/drawable/search_icon.xml" value="0.233" />
+        <entry key="..\:/Users/Emre/Desktop/WeatherApp/app/src/main/res/layout/activity_detail.xml" value="0.17395833333333333" />
         <entry key="..\:/Users/Emre/Desktop/WeatherApp/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/Emre/Desktop/WeatherApp/app/src/main/res/layout/search_item.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/Emre/Desktop/WeatherApp/app/src/main/res/menu/menu.xml" value="0.18697916666666667" />
       </map>
     </option>
   </component>
