@@ -6,4 +6,7 @@
     <dimen name="locations_top_margin">32dp</dimen>
     <dimen name="search_list_elevation">6dp</dimen>
     <dimen name="search_list_item_height">32dp</dimen>
+    <dimen name="city_list_item_height">120dp</dimen>
+    <dimen name="city_list_item_top_margin">8dp</dimen>
+    <dimen name="city_list_item_text_size">24sp</dimen>
 </resources>
