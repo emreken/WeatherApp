@@ -9,4 +9,5 @@
     <dimen name="city_list_item_height">120dp</dimen>
     <dimen name="city_list_item_top_margin">8dp</dimen>
     <dimen name="city_list_item_text_size">24sp</dimen>
+    <dimen name="forecast_list_item_height">300dp</dimen>
 </resources>

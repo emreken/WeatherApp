@@ -8,6 +8,7 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 import com.ekenapp.weatherapp.R
 import com.ekenapp.weatherapp.api.model.SearchRecommendation
+import com.ekenapp.weatherapp.database.City
 import com.ekenapp.weatherapp.utils.SearchItemClick
 
 class SearchAdapter(private val searchItemClick: SearchItemClick):
@@ -34,7 +35,10 @@ class SearchAdapter(private val searchItemClick: SearchItemClick):
         holder.cityNameView.text = completeName
 
         holder.container.setOnClickListener {
-            searchItemClick.onSearchItemClick(searchResults!![position].name!!)
+            searchItemClick.onSearchItemClick(City(0,
+                searchResults!![position].cityKey!!,
+                searchResults!![position].name!!,
+                searchResults!![position].country!!.name!!))
         }
     }
 

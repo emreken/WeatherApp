@@ -26,10 +26,10 @@ class CityAdapter(private val itemClick: SearchItemClick):
     }
 
     override fun onBindViewHolder(holder: CityViewHolder, position: Int) {
-        holder.cityItemName.text = cityResults!![position].name
+        holder.cityItemName.text = cityResults!![position].cityName
 
         holder.container.setOnClickListener {
-            itemClick.onSearchItemClick(cityResults!![position].name)
+            itemClick.onSearchItemClick(cityResults!![position])
         }
     }
 

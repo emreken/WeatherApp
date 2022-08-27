@@ -9,12 +9,12 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.ekenapp.weatherapp.adapters.CityAdapter
 import com.ekenapp.weatherapp.adapters.SearchAdapter
 import com.ekenapp.weatherapp.api.Repository
+import com.ekenapp.weatherapp.database.City
 import com.ekenapp.weatherapp.database.CityDao
 import com.ekenapp.weatherapp.database.DatabaseInstance
 import com.ekenapp.weatherapp.databinding.ActivityMainBinding
@@ -104,9 +104,9 @@ class MainActivity : AppCompatActivity(), SearchItemClick {
         })
     }
 
-    override fun onSearchItemClick(name: String) {
+    override fun onSearchItemClick(city: City) {
         val intent = Intent(this, DetailActivity::class.java)
-        intent.putExtra("city_name", name)
+        intent.putExtra("city", city)
         startActivity(intent)
     }
 }

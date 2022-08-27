@@ -3,16 +3,16 @@ import com.ekenapp.weatherapp.database.City
 import com.ekenapp.weatherapp.database.CityDao
 
 class DatabaseUtil(private val dbInterface: CityDao) {
-    fun isItInTheDatabase(name:String): Boolean {
-        val res = dbInterface.loadCityByName(name)
+    fun isItInTheDatabase(cityKey:String): Boolean {
+        val res = dbInterface.loadCityByKey(cityKey)
         res?.let { return true } ?: run { return false }
     }
 
-    fun addToTheDatabase(name:String) {
-        dbInterface.insertNewCity(City(0, name))
+    fun addToTheDatabase(city:City) {
+        dbInterface.insertNewCity(city)
     }
 
-    fun removeFromDatabase(name:String) {
-        dbInterface.deleteCity(name)
+    fun removeFromDatabase(cityKey:String) {
+        dbInterface.deleteCity(cityKey)
     }
 }
